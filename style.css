@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+}
+
+
+.container {
+    display: flex;
+    width: 67%;
+    margin: 60px auto;
+    
+}
+
+.content {
+    width: 50%;
+}
+
+.left-div {
+    color: white;
+    align-self: center;
+    justify-content: center;
+    padding: 0 28px;
+    /* height: 50vh; */
+    /* padding: 125px 0; */
+
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 36px;
+    line-height: 1.15;
+}
+
+.left-div > p {
+    font-size: 12px;
+    margin-top: 35px;
+}
+
+
+.top-right {
+    background-color:hsl(248, 32%, 49%);
+    border-radius: 8px;
+    padding: 16px 24px;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.down-right {
+    background-color: white;
+    border-radius: 10px;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+.down-right input {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(219, 217, 217);
+    box-sizing: border-box;
+}
+.down-right input:focus {
+    outline: 1px solid rgb(202, 202, 202);
+}
+
+input:required:invalid {
+    outline: none;
+    border: none;
+    border: 1px solid hsl(0, 96%, 69%);
+    background-image: url('/images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+}
+
+input:invalid+span {
+    display: inline;
+    color:hsl(0, 96%, 69%) ;
+    float: right;
+    font-size: 10px;
+}
+
+input:valid {
+    outline: none;
+    border: none;
+    border: 1px solid hsl(154, 59%, 51%);
+}
+
+span {
+    display: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 16px;
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: 1px solid hsl(154, 59%, 51%);
+    box-sizing: border-box;
+}
+
+.down-right p {
+    color: rgb(224, 225, 226);
+    text-align: center;
+    font-size: 9px;
+    margin-top: 10px;
+}
+
+.down-right p a {
+    color: rgb(233, 128, 128);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+    .left-div, .right-div {
+        display: block;
+        width: 100%;
+    }
+    .left-div {
+        text-align: center;
+        padding: 0;
+    }
+    .container {
+        display: block;
+        width: 100%;
+        margin: 60px 0;
+    }
+    main {
+        padding: 0 16px;
+    }
+    .top-right {
+        margin-top: 40px;
+        padding: 16px 64px;
+    }
+    .down-right {
+        padding: 20px
+    }
+
+    .down-right p {
+        padding: 0 24px;
+    }
+
+    .left-div > p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
