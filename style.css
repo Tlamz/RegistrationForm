@@ -54,6 +54,7 @@ h1 {
     font-size: 12px;
     color: white;
     box-sizing: border-box;
+    box-shadow: 0 7px 0 #db6a6e;
 }
 
 .down-right {
@@ -61,6 +62,7 @@ h1 {
     border-radius: 10px;
     padding: 32px;
     box-sizing: border-box;
+    box-shadow: 0 7px 0 #db6a6e;
 }
 
 .down-right input {
